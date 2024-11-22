@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import CoreLocation
+import CoreLocationUI
+import WeatherKit
 
 struct ContentView: View {
+  @EnvironmentObject var colorSchemeManager: ColorSchemeManager
+  //StateObject var locationManager = LocationManager()
+  
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+      VStack {
+        Text("S")
+      }
     }
 }
 
