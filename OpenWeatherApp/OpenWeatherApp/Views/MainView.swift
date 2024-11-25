@@ -76,6 +76,9 @@ struct MainView: View {
             }
           }
         }
+        .background(Color(.systemBackground).opacity(0.8))
+        .environment(\.colorScheme, ColorSchemeManager.currentScheme)
+        .toolbarBackground(Color(.systemBackground), for: .navigationBar)
       }
     }
 }

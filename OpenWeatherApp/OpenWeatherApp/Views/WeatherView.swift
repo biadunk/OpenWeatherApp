@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct WeatherView: View {
+  var weather: ResponseData
+  @StateObject var viewModel: WeatherViewModel
+  @EnvironmentObject var colorSchemeManager: ColorSchemeManager
+  
     var body: some View {
       ZStack {
         Color.gray.opacity(0.1)
